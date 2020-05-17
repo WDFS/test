@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h3>demo1</h3>
+    <script>
+        function sum(...m){
+            let total=0;
+            for(var i of m){
+                total+=i;
+            }
+            console.log(`total:${total}`);
+        };
+        sum(1,2,3,4);
+        //数组扩展
+        var [x,y]=[4,8];
+        console.log(...[4,8]);
+        //函数扩展
+        let arr1=[1,3];
+        let arr2=[4,8];
+        console.log("concat:"+arr1.concat(arr2));
+        [...arr1,...arr2]
+
+    </script>
+</body>
+</html>
